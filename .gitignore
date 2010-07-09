@@ -1,0 +1,7 @@
+*.beam
+deps/
+rel/riak/
+**/*/.eunit
+**/*/erl_crash.dump
+doc/
+apps/riak_core/include/riak_core_pb.hrl

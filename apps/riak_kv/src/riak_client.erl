@@ -451,7 +451,7 @@ get_client_id() ->
     ClientId.
 
 %% @private
-mk_reqid() -> erlang:phash2(erlang:now()). % only has to be unique per-pid
+mk_reqid() -> erlang:make_ref().
 
 %% @private
 wait_for_reqid(ReqId, Timeout) ->
